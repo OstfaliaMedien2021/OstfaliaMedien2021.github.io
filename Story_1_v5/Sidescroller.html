@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ein Artikel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    * {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: auto;
+        height: 100vh;
+        line-height: 1.4;
+    }
+
+    /* Unsichtbarer Scroll-Balken */
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+    /* Rotation von Container */
+    .container {
+        position: relative;
+        top: -50px;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        width: 100vh;
+        height: calc(100vw);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: scroll;
+        transform: rotate(-90deg);
+        transform-origin: center calc(50vh);
+    }
+
+    /* Rotation von Inhalt */
+    .child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1em auto;
+        padding: 2em;
+        width: 1200px;
+        height: 1200px;
+
+        transform: rotate(90deg);
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="content-wrapper">
+
+            <div class="child">
+                <img src="images/rem.jpg">
+                <h1>Musik zur Zeit</h1>
+            </div>
+            <div class="child">
+                <img src="images/rem.jpg">
+                <h1>Musik zur Zeit</h1>
+            </div>
+            <div class="child">
+                <img src="images/rem.jpg">
+                <h1>Musik zur Zeit</h1>
+            </div>
+            <div class="child">
+                <img src="images/rem.jpg">
+                <h1>Musik zur Zeit</h1>
+            </div>
+            <div class="child">
+                <img src="images/rem.jpg">
+                <h1>Musik zur Zeit</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
