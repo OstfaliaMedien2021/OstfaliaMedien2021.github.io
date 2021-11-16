@@ -3,7 +3,7 @@ const bodyTag = document.querySelector('body');
 const progressTag = document.querySelector('div.progress');
 const headerTag = document.querySelector('header');
 const sidebarTag = document.querySelector('.sidebar');
-
+var lastScrollTop = 0;
 let ToggleImg = true;
 
 // Update des Pixel-Tags bei Scroll
@@ -23,10 +23,10 @@ document.addEventListener('scroll', function () {
   
   progressTag.style.width = `${100 * percentage}%`
   // Backticks weil: Variablen-Schreibweise
-  console.log(percentage * 100);
+
 
   let quoteWobble = document.getElementById('quote-wobble');
-  let quoteWobble2 = document.getElementById('quote-wobble2');
+  const quoteWobble2 = document.querySelector('.box-caption2');
   let toTop = document.getElementById('toTop');
 
   if (percentage * 100 >= 6  && percentage * 100 <= 12) {
@@ -38,14 +38,7 @@ document.addEventListener('scroll', function () {
     quoteWobble.classList.add('hide');
   }
 
-  if (percentage * 100 >= 60 && percentage * 100 <=70) {
-    quoteWobble2.classList.remove('transout');
-    quoteWobble2.classList.add('transin');
-  }
-  else {
-    quoteWobble2.classList.remove('transin');
-    quoteWobble2.classList.add('transout');
-  }
+  quoteWobble2.style.left =  -65 + (((((((percentage *10 / 6 ) - 1) * 100)  + 65)/( 5 +65) * (1 - 0) + 0)*10) - 9) * 40  +"%";
 
   if (percentage * 100 >= 90) {
     toTop.classList.remove('hide');
