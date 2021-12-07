@@ -1,0 +1,77 @@
+
+/* außsehen von path */
+.path {
+    stroke: #000000;
+    fill:  transparent;
+    stroke-width: 4px;
+}
+
+/* jeder stroke hat seine eigenen classen namen
+erstes auge eye1
+animation setzen von name von keyframe set
+weitere Funktionalitäten möglich
+siehe Dokumentation
+https://kulturbanause.de/blog/css-keyframe-animationen/
+https://www.w3schools.com/css/css3_animations.asp */
+.eye1 {
+    animation: dasheye1 2s linear;
+    animation-fill-mode: forwards;
+}
+
+/* offset punkt vom start aus für volle animation = 0 */
+/* stroke-dashoffset kann über javascript (JQuery) animiert werden scroll erzeugt svg Linie */
+@keyframes dasheye1 {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.eye2 {
+    animation: dasheye2 2s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+ }
+
+@keyframes dasheye2 {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mouth {
+    animation: dashmouth 2s linear;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+ }
+
+@keyframes dashmouth {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.brow1 {
+    animation: dashbrow1 1s linear;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+ }
+
+@keyframes dashbrow1 {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.brow2 {
+    animation: dashbrow2 1s linear;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+ }
+
+@keyframes dashbrow2 {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+

@@ -1,0 +1,9 @@
+Hi,
+
+hab den Code weitestgehend kommentiert
+Um an den SVG code ran zu kommen svg in irgeneinem Code/Text Editor öffen
+Siehe PNG
+
+Hab einmal einen automatisch animierten und einen Scroller gebastelt. 
+Beim scroller kam ich nicht dran vorbei jquery zu verwenden.
+Eventuell ginge es auch mit Vanilla javascript. Hatte bei mir nur nicht funktioniert.
