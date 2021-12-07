@@ -1,6 +1,6 @@
 inView('.someSelector')
     .on('enter', el => {
-        el.style.opacity = 0.1;
+        el.style.opacity = 1;
         console.log(el.style.opacity);
     })
     .on('exit', el => {
